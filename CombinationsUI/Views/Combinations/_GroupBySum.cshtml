@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CombinationsLib.GroupBySum>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="pull-left">
+                @Html.DisplayNameFor(model => model.Sum)             
+            </th>
+            <th class="pull-left">
+                @Html.DisplayNameFor(model => model.SolutionFrequency)
+            </th>
+            <th class="pull-left" >
+                @Html.DisplayNameFor(model => model.PossibleSolutions)
+            </th>
+        </tr>
+        <tr>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="narrow-Col-Width ">
+                    <strong>@Html.DisplayFor(modelItem => item.Sum)</strong>
+                </td>
+                <td class="narrow-Col-Width app-border-right">
+                    <strong>@Html.DisplayFor(modelItem => item.SolutionFrequency)</strong>
+                </td>
+                @Html.Partial("_GroupBySolution", item.PossibleSolutions)
+            </tr>
+        }
+    </tbody>
+</table>

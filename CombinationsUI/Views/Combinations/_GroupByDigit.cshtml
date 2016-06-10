@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CombinationsLib.GroupByDigitCount>
+
+
+    @foreach (var item in Model)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="pull-left">
+                        @Html.DisplayNameFor(model => model.DigitCount):  @Html.DisplayFor(modelItem => item.DigitCount)
+                    </th>
+                    <th class="pull-left">
+                        @Html.DisplayNameFor(model => model.SolutionsCount):  @Html.DisplayFor(modelItem => item.SolutionsCount)
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @Html.Partial("_GroupBySum", item.GroupByDigits)
+                </tr>
+            </tbody>
+        </table>
+    }
+
+

@@ -1,0 +1,46 @@
+﻿
+.narrow-Col-Width{
+    width:80px;
+    text-align:center;
+}
+table, tr, th{
+    margin:0;
+    
+}
+
+.table{
+    margin-bottom:0;
+}
+.table thead>tr>th{
+    padding:2px;
+    text-align:center;
+    margin-right:15px;
+    
+    border-bottom:none;
+}
+
+.table thead>tr>th .narrow-Col-Width{
+    width:80px;
+}
+
+.highlight-off{
+    background-color:antiquewhite;
+}
+
+.narrow-Col-Width.app-border-right{
+    border-right-width:2px;
+    border-right-style:solid;
+    border-right-color:antiquewhite;
+}
+    
+.table thead>tr>th.pull-left{
+    text-align:center;
+    margin-left:12px;
+    margin-right:10px;
+}
+
+.table thead{
+    background-color:antiquewhite;
+}
+
+

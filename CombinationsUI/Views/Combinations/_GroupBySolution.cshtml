@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CombinationsLib.GroupBySolution>
+
+
+@foreach (var item in Model)
+{
+    <td class="narrow-Col-Width">
+        @foreach (var s in item.Solution)
+        {
+            @s
+        }
+    </td>
+
+}
+
+
