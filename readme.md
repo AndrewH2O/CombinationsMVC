@@ -11,4 +11,4 @@ Features:
 * Nested partial views are used
 * Bootstrap styling
 
-![alt text](https://github.com/AndrewH2O/CombinationsMVC/raw/master/CombinationsMVC/ScreenShot.png "Solution Viewers")
+![alt text](https://github.com/AndrewH2O/CombinationsMVC/raw/master/ScreenShot.png "Solution Viewers")
